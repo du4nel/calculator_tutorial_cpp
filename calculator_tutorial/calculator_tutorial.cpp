@@ -16,7 +16,17 @@ int main()
     while (true)
     {
         std::cin >> x >> oper >> y;
-        result = c.Calculate(x, oper, y);
+
+        if (oper == '/' && y == 0)
+        {
+            std::cout << "Attempted to divide by zero!" << std::endl;
+            continue;
+        }
+        else {
+            result = c.Calculate(x, oper, y);
+
+        }
+
         std::cout << "Result " << "of " << x << oper << y << " is: " << result << std::endl;
     }
 
