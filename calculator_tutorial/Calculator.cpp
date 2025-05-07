@@ -1,6 +1,18 @@
 #include "Calculator.h"
 
-double Calculator::calculate(double x, char oper, double y)
+double Calculator::Calculate(double x, char oper, double y)
 {
-    return 0.0;
+	switch (oper)
+	{
+	case '+':
+		return x + y;
+	case '-':
+		return x - y;
+	case '*':
+		return x * y;
+	case '/':
+		return x / y;
+	default:
+		return 0.0;
+	}
 }

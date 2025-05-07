@@ -1,6 +1,6 @@
-#pragma once
-class Calculator
+#pragma once  
+class Calculator  
 {
-	double calculate(double x, char oper, double y);
+public:
+   double Calculate(double x, char oper, double y);  
 };
-
